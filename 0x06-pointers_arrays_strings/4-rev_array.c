@@ -3,21 +3,17 @@
 /**
  * reverse_array - Reverses the content of an array of integers.
  * @a: The array of integers to be reversed.
- * @n: the number of elements in the array.
+ * @n: The number of elements in the array.
  *
  */
-
-void reverse_array(int *a, int n)
-
+void reversed_array(int *a, int n)
 {
-
 	int tmp, index;
 
-	for(index = n - 1; index >= n / 2; index--)
+	for (index = n - 1; index >= n / 2; index--)
 	{
-	tmp = a[n - 1 - index];
-	a[n - 1 - index] = a[index];
-	a[index] = tmp;
+		tmp = a[n - 1 - index];
+		a[n - 1 - index] = a[index];
+		a[index] = tmp;
 	}
-
 }
