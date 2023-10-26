@@ -1,0 +1,1 @@
+The readme.md file provides an in-depth exploration of recursion, covering topics such as what recursion is, how to effectively implement recursion, when to choose recursion as a solution, and the scenarios in which it's best to avoid using recursion.
