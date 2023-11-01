@@ -4,7 +4,7 @@
 /**
  * alloc_grid - ...
  * @width: ...
- * @height: ..
+ * @height: ...
  *
  * Return: ...
  */
@@ -23,6 +23,7 @@ int **alloc_grid(int width, int height)
 		free(a);
 		return (NULL);
 	}
+
 	for (i = 0; i < height; i++)
 	{
 		a[i] = malloc(sizeof(int) * width);
@@ -47,5 +48,5 @@ int **alloc_grid(int width, int height)
 		}
 	}
 
-	return (0);
+	return (a);
 }
