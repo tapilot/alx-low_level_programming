@@ -1,0 +1,1 @@
+A function pointer is a variable in C and C++ that holds the memory address of a function, allowing you to call that function indirectly through the pointer, typically pointing to a virtual memory address managed by the operating system's memory management unit.
