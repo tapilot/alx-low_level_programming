@@ -1,14 +1,14 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
+#include <stdlib.h>
 
 /**
  * _pow - func calculates (base ^ power)
  * @base: base of the experiment
- * @power: power of the exponent
+ * @power: power of the experiment
  *
- * Return: value of (base ^ power)
+ * Return: value of (base ^power)
  */
 unsigned long int _pow(unsigned int base, unsigned int power)
 {
@@ -18,7 +18,7 @@ unsigned long int _pow(unsigned int base, unsigned int power)
 
 	num = 1;
 	for (a = 1; a <= power; a++)
-		num += base;
+		num *= base;
 	return (num);
 }
 
@@ -38,15 +38,15 @@ void print_binary(unsigned long int n)
 	while (divisor != 0)
 	{
 		check = n & divisor;
-			if (check == divisor)
-			{
-				flag = 1;
-				_putchar ('1');
-			}
-			else if (flag == 1 || divisor == 1)
-			{
-				_putchar ('0');
-			}
+		if (check == divisor)
+		{
+			flag = 1;
+			_putchar ('1');
+		}
+		else if (flag == 1 || divisor == 1)
+		{
+			_putchar ('0');
+		}
 		divisor >>= 1;
 	}
 }
