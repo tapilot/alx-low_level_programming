@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
- * flip_bit - counts the number of bits to change
+ * flip_bits - counts the number of bits to change
  * to get from one number to another
  * @n: first number
  * @m: second number
